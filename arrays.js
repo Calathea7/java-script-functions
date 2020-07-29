@@ -11,7 +11,6 @@ function printIndices(items) {
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
-  let result = []
 
   for (const i in items) {
     if (i % 2 === 0) {
@@ -23,5 +22,8 @@ function everyOtherItem(items) {
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+  const itemSort = items.sort((a, b) => a - b);
+  const itemSlice = itemSort.slice(0, n);
+  itemSlice.reverse()
+  console.log(itemSlice);
 }
