@@ -4,7 +4,9 @@
 // 1. isHometown
 
 // Define your function here
-
+function isHometown(town) {
+  return town === 'San Francisco';
+}
 
 // 2. getFullName
 
